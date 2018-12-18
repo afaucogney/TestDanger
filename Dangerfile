@@ -29,9 +29,12 @@ markdown [
 # Make it more obvious that a PR is a work in progress
 ####################################################################################################
 
-if vsts.pr_title.include? "[WIP]" || gitlab.mr_title.starts_with?('WIP')
+if github.pr_title.include? "[WIP]" || github.pr_title.starts_with?('WIP')
   warn("PR is classed as Work in Progress")
 end
+
+
+
 
 ####################################################################################################
 # Make it more obvious that a PR has many changes

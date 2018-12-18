@@ -28,6 +28,8 @@ GEM
     danger-android_lint (0.0.6)
       danger-plugin-api (~> 1.0)
       oga
+    danger-android_permissions_checker (0.0.2)
+      danger-plugin-api (~> 1.0)
     danger-apkanalyzer (0.0.1)
       danger-plugin-api (~> 1.0)
     danger-apkstats (0.2.0)
@@ -68,6 +70,7 @@ PLATFORMS
 DEPENDENCIES
   danger
   danger-android_lint
+  danger-android_permissions_checker
   danger-apkanalyzer
   danger-apkstats
   danger-kotlin_detekt
