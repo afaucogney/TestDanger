@@ -55,7 +55,7 @@ if changelog_updated
   invalid_lines = added_lines
     .reject { |l| l == '+' } # empty line
     .reject { |l| l.start_with?('+## ') } # title line
-    .reject { |l| l.match(entry_re)} # valid entry line
+#    .reject { |l| l.match(entry_re)} # valid entry line
   invalid_lines.each do |l|
     warn("New CHANGELOG entries should start with \`* \` followed by a jira reference\n\`#{l}\`")
   end
